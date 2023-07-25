@@ -1,38 +1,104 @@
-.App {
-  text-align: center;
+@font-face {
+  font-family:mitr ;
+  src: url(./fonts/Mitr/Mitr-Regular.ttf);
+}
+@font-face {
+  font-family:promt ;
+  src: url(./fonts/Prompt/Prompt-SemiBold.ttf);
+}
+@font-face {
+  font-family: Saraban;
+  src: url(./fonts/Sarabun/Sarabun-ExtraBold.ttf);
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: cursive;
+}
+.link{
+  color: #fff;
+
+  padding: 0px 10px 0px 0px;
+  font-size: 18px;
+  transition: 0.1s;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.link:hover{
+  color: aqua;
+  font-size: 16px;
+  transition: 0.1s;
 }
+.link{
+  font-family: Saraban;
+}
+.PP{
+  font-family: promt;
+}
+nav{
+  height: 100%;
+font-family: Saraban;
+  background-color: Orange;
+  align-items: center;
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+
+}
+.card-body .card-title{
+  font-family: mitr;
+}
+nav .icon{
+  width: 5%;
+  height: 100%;
+ display: flex;
+
+ justify-content: left;
+ align-items: center; 
+
+ 
+}
+.cover-card{
+  width: 100%;
   display: flex;
-  flex-direction: column;
+  
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
 }
+ .card-list{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 20px;
+  flex-direction: column;
+  padding:40px;
+  height:25%;
 
-.App-link {
-  color: #61dafb;
+
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.card-list .card-body{
+  text-align: center;
+  font-family: mitr;
+}
+.MM{
+font-family: mitr;
+}
+.card-list .card-body .card-text{
+  font-family: mitr;
+}
+.cover-card img{
+  
+  border-radius:100% ;
+  width: 150px;
+  height: 150px;
+}
+nav .icon img {
+  margin-left: 15px;
+  width: 35px;
+  height: 35px;
+  border-radius: 100%;
+}
+.table-hover tbody tr:hover td,.table-hover tbody tr:hover th{
+  background:purple;
+  color: #fff;
+  cursor: pointer;
 }
